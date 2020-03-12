@@ -1,0 +1,225 @@
+.text-muted {
+	color: #868e96!important
+}
+
+
+#toys {
+    padding-top: 50px;
+}
+#buy {
+    padding-top: 50px;
+}
+
+
+
+section {
+	padding: 100px 0
+}
+
+section h2.section-heading {
+	font-size: 40px;
+	margin-top: 0;
+	margin-bottom: 15px
+}
+
+section h3.section-subheading {
+	font-size: 16px;
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 75px;
+	text-transform: none;
+	font-family: Droid Serif, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+
+
+.btn {
+	font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 700
+}
+
+.btn-xl {
+	font-size: 18px;
+	padding: 20px 40px
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #fed136;
+	border-color: #fed136
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+	background-color: #fec810!important;
+	border-color: #fec810!important;
+	color: #fff
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+	box-shadow: 0 0 0 .2rem rgba(254, 209, 55, .5)!important
+}
+
+
+
+
+
+.masthead {
+    background-image:url('header-bg.jpg')!important;
+}
+
+.intro-text {
+background-color: rgba(32, 0, 51, 0.503);
+
+}
+
+.toys {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    font-size: 4em;
+}
+
+.girl {
+ background-image:url('logos/girl.png');
+}
+.boy {
+ background-image:url('logos/boy.png');
+}
+.actors {
+ background-image:url('logos/sw.png');
+}
+.barbi {
+ background-image:url('logos/barbi.png');
+}
+.hz {
+ background-image:url('logos/hz.png');
+}
+.yy {
+ background-image:url('logos/yy.png');
+}
+
+
+.img-fluid {
+	width: 100%;
+    height: auto;
+}
+
+
+.btn.buy {
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+
+section#contact {
+	background-color: #ffeaea;
+	background-repeat: no-repeat;
+	background-position: 50%
+}
+
+section#contact .section-heading {
+	color: #000;
+}
+
+section#contact .form-group {
+	margin-bottom: 25px
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+	padding: 20px
+}
+
+section#contact .form-group input.form-control {
+	height: auto
+}
+
+section#contact .form-group textarea.form-control {
+	height: 248px
+}
+
+section#contact .form-control:focus {
+	border-color: #fed136;
+	box-shadow: none
+}
+
+section#contact ::-webkit-input-placeholder {
+	font-weight: 700;
+	color: #ced4da;
+	font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+section#contact :-moz-placeholder,
+section#contact ::-moz-placeholder {
+	font-weight: 700;
+	color: #ced4da;
+	font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+section#contact :-ms-input-placeholder {
+	font-weight: 700;
+	color: #ced4da;
+	font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+
+.team-toys {
+	margin-bottom: 50px;
+	text-align: center
+}
+
+.team-toys img {
+	width: 225px;
+	height: 225px;
+	border: 7px solid #fff
+}
+
+.team-toys h4 {
+	margin-top: 25px;
+	margin-bottom: 0;
+	text-transform: none
+}
+
+.team-toys p {
+	margin-top: 0
+}
+
+
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+
+#contact .col-md-6 {
+	padding: 0 15px
+}
+
+
+@media (min-width:768px) {
+
+	section {
+		padding: 100px 0
+	}
+}
