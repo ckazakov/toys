@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Магазин</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/img/style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.min.css">
 
 </head>
+
 
 <body id="page-top">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
@@ -21,11 +18,11 @@
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#toys">Категории игрушек</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#buy">Купить</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">О нас</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#team">Команда магазина</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Написать нам</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-effect" href="#toys">Категории игрушек</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-effect" href="#buy">Смотреть</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-effect" href="#about">О нас</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-effect" href="#team">Команда магазина</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-effect" href="#contact">Написать нам</a></li>
                 </ul>
             </div>
         </div>
@@ -35,7 +32,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in"><span>Магазин игрушек!</span></div>
                 <div class="intro-heading text-uppercase"><span>Самые интересные игрушки только у нас!</span></div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#toys">Игрушки...</a></div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-effect" role="button" href="#toys">Игрушки...</a></div>
         </div>
     </header>
     <section>
@@ -79,7 +76,7 @@
         <div class="container" id="buy">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">Купить</h2>
+                    <h2 class="text-uppercase section-heading">Смотреть</h2>
                     <h3 class="section-subheading text-muted">Здесь вы можете выбрать категорию</h3>
                 </div>
             </div>
@@ -89,56 +86,155 @@
                     <img class="img-fluid" src="assets/img/buy/blaster.jpg"></img>
                         <h4>Бластеры</h4>
                         <p class="text-muted">Для мальчикоов и не только</p>
-                        <button class="btn btn-primary buy">Купить</button>
+                        <button type="button" class="btn btn-primary buy" data-toggle="modal" data-target=".blast">
+                            <i class="fas fa-play p-1"></i> Смотреть
+                        </button>
+                        
+                        <div class="modal fade blast" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                    <iframe src="https://www.youtube.com/embed/hsSYzY4rN4c" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="col-sm-6 col-md-3 toy-item">
                     <img class="img-fluid" src="assets/img/buy/lego.jpg"></img>
-                        <h4>Бластеры</h4>
+                        <h4>LEGO</h4>
                         <p class="text-muted">Для мальчикоов и не только</p>
-                         <button class="btn btn-primary buy">Купить</button>
+                        <button type="button" class="btn btn-primary buy" data-toggle="modal" data-target=".lego">
+                            <i class="fas fa-play p-1"></i> Смотреть
+                        </button>
+                        
+                        <div class="modal fade lego" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                    <iframe src="https://www.youtube.com/embed/IXJpQeZ23o8" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="col-sm-6 col-md-3 toy-item">
                     <img class="img-fluid" src="assets/img/buy/lol.jpg"></img>
-                        <h4>Бластеры</h4>
+                        <h4>LOL</h4>
                         <p class="text-muted">Для мальчикоов и не только</p>
-                         <button class="btn btn-primary buy">Купить</button>
+                        <button type="button" class="btn btn-primary buy" data-toggle="modal" data-target=".lol">
+                            <i class="fas fa-play p-1"></i> Смотреть
+                        </button>
+
+                        <div class="modal fade lol" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                <iframe src="https://www.youtube.com/embed/ZcsXtpg9CoM" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="col-sm-6 col-md-3 toy-item">
                     <img class="img-fluid" src="assets/img/buy/logic.jpg"></img>
                         <h4>Бластеры</h4>
                         <p class="text-muted">Для мальчикоов и не только</p>
-                         <button class="btn btn-primary buy">Купить</button>
+                        <button type="button" class="btn btn-primary buy" data-toggle="modal" data-target=".logic">
+                            <i class="fas fa-play p-1"></i> Смотреть
+                        </button>
+                        
+                        <div class="modal fade logic" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                    <iframe src="https://www.youtube.com/embed/tYC4YcnABbE" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="col-sm-6 col-md-3 toy-item">
                     <img class="img-fluid" src="assets/img/buy/table.jpeg"></img>
                         <h4>Бластеры</h4>
                         <p class="text-muted">Для мальчикоов и не только</p>
-                         <button class="btn btn-primary buy">Купить</button>
+                        <button type="button" class="btn btn-primary buy" data-toggle="modal" data-target=".table">
+                            <i class="fas fa-play p-1"></i> Смотреть
+                        </button>
+
+                        <div class="modal fade table" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                <iframe src="https://www.youtube.com/embed/ZcsXtpg9CoM" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="col-sm-6 col-md-3 toy-item">
                     <img class="img-fluid" src="assets/img/buy/car.jpg"></img>
                         <h4>Бластеры</h4>
                         <p class="text-muted">Для мальчикоов и не только</p>
-                         <button class="btn btn-primary buy">Купить</button>
+                       <button type="button" class="btn btn-primary buy" data-toggle="modal" data-target=".car">
+                            <i class="fas fa-play p-1"></i> Смотреть
+                        </button>
+
+                        <div class="modal fade car" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                <iframe src="https://www.youtube.com/embed/ZcsXtpg9CoM" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="col-sm-6 col-md-3 toy-item">
                     <img class="img-fluid" src="assets/img/buy/lama.jpg"></img>
                         <h4>Бластеры</h4>
                         <p class="text-muted">Для мальчикоов и не только</p>
-                         <button class="btn btn-primary buy">Купить</button>
+                      <button type="button" class="btn btn-primary buy" data-toggle="modal" data-target=".lama">
+                            <i class="fas fa-play p-1"></i> Смотреть
+                        </button>
+
+                        <div class="modal fade lama" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                <iframe src="https://www.youtube.com/embed/ZcsXtpg9CoM" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="col-sm-6 col-md-3 toy-item">
                     <img class="img-fluid" src="assets/img/buy/beat.jpg"></img>
                         <h4>Бластеры</h4>
                         <p class="text-muted">Для мальчикоов и не только</p>
-                         <button class="btn btn-primary buy">Купить</button>
+                        <button type="button" class="btn btn-primary buy" data-toggle="modal" data-target=".beat">
+                        <i class="fas fa-play p-1"></i> Смотреть
+                        </button>
+
+                        <div class="modal fade beat" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                <iframe src="https://www.youtube.com/embed/ZcsXtpg9CoM" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
             </div>
@@ -277,11 +373,19 @@
             </div>
         </div>
     </section>
-    
+
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/agency.js"></script>
+    <script src="assets/js/scroll-effect.js"></script>
+
+
+
 </body>
 
 </html>
